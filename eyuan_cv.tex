@@ -1,0 +1,197 @@
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------------------------------------------------------------
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Enkang Yuan} \\ \vspace{1pt}
+    \small (832) 530-6878 $|$ \href{mailto:yuan_enkang@outlook.com}{\underline{yuan\_enkang@outlook.com}} $|$ 
+    \href{https://enkyuan.github.io}{\underline{enkyuan.github.io}}
+    $|$ 
+    \href{https://github.com/enkyuan}{\underline{github.com/enkyuan}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Dallas}{Aug. 2023 -- Present}
+      {B.S. Computer Science}
+      {Richardson, TX}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Computer Architecture, Data Structures, Probability \& Statistics, Linear Algebra}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\textbf{Software Engineer}}{May 2023 -- Present}
+      {Gather}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Migrated \textbf{over 29\%} of the client-side code to \textbf{React Native} for added extensibility and to better serve end users}
+        \resumeItem{Worked with another engineer to ship a ticketing portal that synchronizes with our backend using \textbf{Flutter Web SDK}, \textbf{Cloud Functions}, and \textbf{Stripe}}
+        \resumeItem{Refactored \textbf{over 11\%} of the codebase to deliver \textbf{faster rendering times} and \textbf{improved performance} for over \textbf{1500 users} across UTD and UNT}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Researcher}}{Aug. 2023 -- Feb. 2024}
+      {Drone Calibration Lab}{Richardson, TX}
+      \resumeItemListStart
+        \resumeItem{Worked with a team of 4 to ship a simulation for aerial delivery systems using \textbf{PyBullet}, \textbf{Anaconda}, and \textbf{ROS}}
+        \resumeItem{Documented portions of the codebase to enhance readability and workflow efficiency}       
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\textbf{Mentor}}{Jun. 2023 -- Jul. 2023}
+      {STEMkidz}{Katy, TX}
+      \resumeItemListStart
+        \resumeItem{Mentored the summer batch enrolled in Introduction to Hardware and IoT, explaining concepts and fundamental programming knowledge to students with non-technical backgrounds}
+        \resumeItem{Coordinated lesson plans and hand-on activities with 2 other mentors to deliver interactive content with \textbf{Arduino} and hardware fabrication tools}       
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+ % -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading for promotions/multiple levels of the same position under the same company
+%-------------------------------------------     
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart         
+
+    \resumeProjectHeading
+      {\textbf{Moodscapes} $|$ \emph{LLM-based Soundscapes}}{Nov. 2023}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team of 3 and developed a fully functional web application with a dynamic \textbf{JavaScript}-based client, a \textbf{HTTP}-based backend with a \textbf{RESTful server-side API}, and integrations with \textbf{GPT-4}, \textbf{Spotify's Web SDK}, and \textbf{Face API}}
+        \resumeItem{Designed the user interface with \textbf{Figma} and created a development preview on \textbf{ngrok}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{UTD Planner} $|$ \emph{Nebula Labs}} {Sept. 2023}
+      \resumeItemListStart
+        \resumeItem{Collaborated with a team of 6 delivering bug fixes and quality of life improvements to a \textbf{full-scale} platform used by \textbf{hundreds of UTD students}}
+        \resumeItem{Rewrote portions of the onboarding document to improve setups on \textbf{UNIX-based} systems}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{Griddy} $|$ \emph{Backend for Banking}}{Sept. 2023}
+      \resumeItemListStart
+        \resumeItem{Created a \textbf{HTTP}-based service with a \textbf{RESTful} architecture to emulate banking activity, i.e., transactions, account creation, etc. Secured with \textbf{JWT Authentication}}
+        \resumeItem{Built with \textbf{Go}, \textbf{Postgres}, \textbf{Docker}, and \textbf{Postman}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Parking System} $|$ \emph{Cinco Ranch HS}}{May 2023}
+      \resumeItemListStart
+        \resumeItem{Worked with a team of 2 to deliver a parking management solution providing payment services and selection system for students and faculty}
+        \resumeItem{Built with \textbf{Flutter}, \textbf{Firestore}, \textbf{People API}, \textbf{Stripe}, \textbf{OpenStreetMap} and \textbf{Google Maps}}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%----------- TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    {\textbf{Languages}: Java, C/C++, Dart, Typescript}\\
+    {\textbf{Technologies}: Node.js, React.js, Next.js, Flutter, SQL}\\
+    {\textbf{Tools}: Jira, Confluence, Figma}}}
+\end{itemize}
+%---------------------------------------
+
+\end{document}
+
